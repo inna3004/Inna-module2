@@ -1,5 +1,8 @@
-def factorial(n):
-   if n == 1:
-       return 1
-   return fac(n - 1) * n
-print(factorial(5))
+number = int(input('Введите число: '))
+factorial = 1
+
+while number > 1:
+   factorial = factorial * number
+   number = number - 1
+
+print(factorial)
